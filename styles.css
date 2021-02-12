@@ -59,6 +59,7 @@ iframe {
   width: 1500px;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   background: yellow;
@@ -66,27 +67,29 @@ iframe {
 
 .card-container{
   position: relative;
-  max-width: 600px;
-  height: 300px;
+  max-width: 300px;
+  height: 500px;
   margin: 10px;
   background: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 15px;
 }
 
 .image-container{
-  max-width: 250px;
-  flex: 0 0 240px;
+  max-width: 300px;
+  max-height: 200px;
+  flex: 0 0 300px;
 }
 
 .card-image{
-  max-height: 100%;
-  flex:0 0 240px;
+  max-width: 100%;
+  flex:0 0 300px;
+  object-fit: cover;
 }
 
 .text-container{
-  padding-left: 20px;
+  padding-bottom: 20px;
   background:#f4f4f4;
 
 }
@@ -109,4 +112,6 @@ iframe {
   text-align: center;
 
 }
+
+
 

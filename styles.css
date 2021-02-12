@@ -85,7 +85,6 @@ iframe {
 .card-image{
   max-width: 100%;
   flex:0 0 300px;
-  object-fit: cover;
 }
 
 .text-container{
@@ -111,6 +110,34 @@ iframe {
   border-radius: 5%;
   text-align: center;
 
+}
+
+@media (min-width: 677px){
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+  .text-container{
+    padding-left: 20px;
+  }
+
+  .card-container{
+    flex-direction: row;
+    max-width: 600px;
+    height: 300px;
+  }
+
+  .image-container{
+    max-height: 300px;
+    flex: 0 0 250px;
+  }
+
+  .card-image{
+    max-height: 100%;
+    object-fit: contain;
+    
+  }
 }
 
 

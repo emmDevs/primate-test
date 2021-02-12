@@ -50,3 +50,42 @@ iframe {
 }
 
 /* your styles here */
+
+.card-container{
+  position: relative;
+  max-width: 650px;
+  display: flex;
+}
+
+.image-container{
+  max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.image-container > img{
+  max-width: 100%;
+}
+
+.text-container{
+  margin-left: 20px;
+}
+
+.text-container > article > h2{
+  color: #184269;
+}
+
+.chevron{
+  display: inline-flex;
+  align-self: center;
+  border: none;
+}
+
+.button{
+  background-color: #184269;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5%;
+  text-align: center;
+
+}
+

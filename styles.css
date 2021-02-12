@@ -9,11 +9,14 @@ body {
   background: var(--color-secondary, white);
 
   font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .wrapper {
   display: flex;
-  flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
 
@@ -51,26 +54,44 @@ iframe {
 
 /* your styles here */
 
+.container{
+  position: relative;
+  width: 1500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: yellow;
+}
+
 .card-container{
   position: relative;
-  max-width: 650px;
+  max-width: 600px;
+  height: 300px;
+  margin: 10px;
+  background: #fff;
   display: flex;
+  flex-direction: row;
+  padding: 15px;
 }
 
 .image-container{
-  max-width: 150px;
-  flex: 0 0 150px;
+  max-width: 250px;
+  flex: 0 0 240px;
 }
 
-.image-container > img{
-  max-width: 100%;
+.card-image{
+  max-height: 100%;
+  flex:0 0 240px;
 }
 
 .text-container{
-  margin-left: 20px;
+  padding-left: 20px;
+  background:#f4f4f4;
+
 }
 
-.text-container > article > h2{
+.text-container > h2{
   color: #184269;
 }
 

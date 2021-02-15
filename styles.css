@@ -54,6 +54,13 @@ iframe {
 
 /* your styles here */
 
+/* Hi, I have thoroughly enjoyed doing this task.  I absolutely recognise the importance of semantic and accessible websites and have tried to
+incorporate this into every project that I do.  I love that I am picking up extra bits each time I do a new project and this task has been no different.  I used the 
+grid layout for my portfolio site and flexbox for our last group project to animate images which was great fun. I love learning new techniques and better ways of doing 
+things so would love to be able to get feedback and learn from your expertise and further the skills that I have already built up.  Kind regards, Emma */
+
+
+/* for 1 mobile image in a column */
 .container{
   position: relative;
   width: 1500px;
@@ -132,6 +139,7 @@ iframe {
   fill: #184269;
 }
 
+/* for 1 desktop image in a column*/
 @media (min-width: 677px){
 .container{
   display: flex;
@@ -159,6 +167,7 @@ iframe {
   }
 }
 
+/* for 2 mobile images side by side */
 @media (min-width: 750px) and (max-width: 900px){
 
     .card-container{
@@ -179,6 +188,8 @@ iframe {
       background:#f4f4f4;
   }
   
+
+  /* for 2 desktop images side by side */
   @media (min-width: 1200px){
     .container{
       display: flex;

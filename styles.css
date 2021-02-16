@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .wrapper {
@@ -59,9 +58,8 @@ incorporate this into every project that I do.  I love that I am picking up extr
 grid layout for my portfolio site and flexbox for our last group project to animate images which was great fun. I love learning new techniques and better ways of doing 
 things so would love to be able to get feedback and learn from your expertise and further the skills that I have already built up.  Kind regards, Emma */
 
-
 /* for 1 mobile image in a column */
-.container{
+.container {
   position: relative;
   width: 1500px;
   display: flex;
@@ -69,10 +67,10 @@ things so would love to be able to get feedback and learn from your expertise an
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  background:grey;
+  background: grey;
 }
 
-.card-container{
+.card-container {
   position: relative;
   max-width: 300px;
   height: 500px;
@@ -81,13 +79,13 @@ things so would love to be able to get feedback and learn from your expertise an
   flex-direction: column;
 }
 
-.image-container{
+.image-container {
   max-width: 300px;
   max-height: 200px;
   flex: 0 0 300px;
 }
 
-.card-image{
+.card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -95,7 +93,7 @@ things so would love to be able to get feedback and learn from your expertise an
   display: block;
 }
 
-.text-container{
+.text-container {
   padding-bottom: 20px;
   padding-left: 20px;
   font-size: 15px;
@@ -106,17 +104,17 @@ things so would love to be able to get feedback and learn from your expertise an
   background: #fff;
 }
 
-.text-container > h2{
+.text-container > h2 {
   color: #184269;
 }
 
-.chevron{
+.chevron {
   display: inline-flex;
   align-self: center;
   border: none;
 }
 
-.button{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,87 +133,84 @@ things so would love to be able to get feedback and learn from your expertise an
   background-color: #fff;
 }
 
-.button:hover .chevron{
+.button:hover .chevron {
   fill: #184269;
 }
 
 /* for 1 desktop image in a column*/
-@media (min-width: 677px){
-.container{
-  display: flex;
-  flex-direction: row;
-}
+@media (min-width: 677px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
 
-  .text-container{
+  .text-container {
     padding-left: 20px;
   }
 
-  .card-container{
+  .card-container {
     flex-direction: row;
     max-width: 600px;
     height: 300px;
   }
 
-  .image-container{
+  .image-container {
     max-height: 300px;
     flex: 0 0 250px;
   }
 
-  .card-image{
+  .card-image {
     max-width: 100%;
     max-height: 300px;
   }
 }
 
 /* for 2 mobile images side by side */
-@media (min-width: 750px) and (max-width: 900px){
-
-    .card-container{
-      flex-direction: column;
-      max-width: 300px;
-      height: 500px;
-    }
-  
-    .image-container{
-      max-width: 300px;
-      max-height: 200px;
-      flex: 0 0 300px;
-    }
-  
-    .text-container{
-      padding-left: 20px;
-      padding-bottom: 20px;
-      background:#f4f4f4;
+@media (min-width: 750px) and (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 300px;
+    height: 500px;
   }
-  
+
+  .image-container {
+    max-width: 300px;
+    max-height: 200px;
+    flex: 0 0 300px;
+  }
+
+  .text-container {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background: #f4f4f4;
+  }
 
   /* for 2 desktop images side by side */
-  @media (min-width: 1200px){
-    .container{
+  @media (min-width: 1200px) {
+    .container {
       display: flex;
       flex-direction: row;
       width: 750px;
+    }
 
+    .text-container {
+      padding-left: 20px;
     }
-    
-      .text-container{
-        padding-left: 20px;
-      }
-    
-      .card-container{
-        flex-direction: row;
-        max-width: 600px;
-        height: 300px;
-      }
-    
-      .image-container{
-        max-height: 300px;
-        flex: 0 0 250px;
-      }
-    
-      .card-image{
-        max-width: 100%;
-        max-height: 300px;
-      }
+
+    .card-container {
+      flex-direction: row;
+      max-width: 600px;
+      height: 300px;
     }
-  
+
+    .image-container {
+      max-height: 300px;
+      flex: 0 0 250px;
+    }
+
+    .card-image {
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+}
